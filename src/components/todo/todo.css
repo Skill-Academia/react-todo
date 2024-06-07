@@ -1,0 +1,112 @@
+.container {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center children vertically in the container */
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Space between title and input section */
+}
+
+.input-section {
+    width: 100%;
+    /* Take the full width of the container */
+    display: flex;
+    justify-content: center;
+    /* Center children horizontally */
+    margin-bottom: 20px;
+}
+
+.input-field {
+    flex-grow: 1;
+    /* Allow the input to grow */
+    padding: 10px 15px;
+    /* Adjusted padding for better text visibility */
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    /* Slightly thicker border for better visibility */
+    border-radius: 8px;
+    /* Rounded corners */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition for focus and hover effects */
+    outline: none;
+    /* Remove default focus outline */
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    /* Add a glow effect when focused */
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.add-btn:hover {
+    background-color: #555;
+    /* Slightly lighter on hover for feedback */
+}
+
+.list-section {
+    width: 100%;
+    /* Match width to input section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center list items */
+}
+
+.list-item {
+    background-color: #666;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* Full width of the list section */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Space between the todo text and buttons */
+    border-radius: 4px;
+    /* Rounded corners */
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #b187ff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #646cff;
+    border-color: #646cff;
+}
